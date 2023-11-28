@@ -1,4 +1,4 @@
-# Getting To Know The Algorithm For The First Time
+# Introduction to Algorithms
 
 <div class="center-table" markdown>
 
