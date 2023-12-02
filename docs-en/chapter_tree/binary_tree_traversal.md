@@ -2,7 +2,7 @@
 
 From a physical structure point of view, a tree is a data structure based on a linked list, and therefore its traversal is done by accessing the nodes one by one through pointers. However, a tree is a nonlinear data structure, which makes traversing a tree more complex than traversing a linked list, and needs to be implemented with the help of a searching algorithm.
 
-Common traversals of binary trees include level-order traversal, preorder traversal, middle-order traversal, and postorder traversal.
+Common traversals of binary trees include level-order traversal, preorder traversal, Inorder traversal, and postorder traversal.
 
 ## Level-Order Traversal
 
@@ -25,11 +25,11 @@ Breadth-first traversal is usually implemented with the help of a "queue". While
 - **Time complexity $O(n)$** : All nodes are visited once, using $O(n)$ time, where $n$ is the number of nodes.
 - **Space complexity $O(n)$** : In the worst case, i.e., a full binary tree, there are at most $(n + 1) / 2$ nodes in the queue at the same time before traversing to the bottom level, occupying $O(n)$ space.
 
-## Pre-Order, Middle-Order, And Back-Order Traversal
+## Pre-Order, Inorder, And Postorder Traversal
 
-Accordingly, preorder, midorder and postorder traversal are all "depth-first traversal depth-first traversal", which embodies a traversal method of "going to the end first and then backtracking to continue".
+Accordingly, preorder, inorder and postorder traversal are all "depth-first traversal (DFS)", which embodies a traversal method of "going to the end first and then backtracking to continue".
 
-The figure below shows how depth-first traversal of a binary tree works. **Depth-first traversal is like "walking" around the entire perimeter of the binary tree**, encountering three positions at each node, corresponding to a preorder traversal, a middle-order traversal, and a postorder traversal.
+The figure below shows how depth-first traversal of a binary tree works. **Depth-first traversal is like "walking" around the entire perimeter of the binary tree**, encountering three positions at each node, corresponding to a preorder traversal, a Inorder traversal, and a postorder traversal.
 
 ![Pre-, mid-, and postorder traversal of a binary search tree](binary_tree_traversal.assets/binary_tree_dfs.png)
 
